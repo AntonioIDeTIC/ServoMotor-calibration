@@ -1,6 +1,7 @@
 # ServoMotor-calibration
 This repository aims to propose a concrete methodology for calibrating servo motors that do not have an encoder.
 
+
 ## 💻 Materials
 In this work, a Futaba s-3003 servo motor was used. This servomotor can be purchased on [Amazon].
 
