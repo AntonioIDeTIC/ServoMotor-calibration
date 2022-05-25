@@ -6,7 +6,7 @@ import matplotlib
 
 # Select your font
 font = {'family' : 'Times New Roman',
-        'size'   : 15}
+        'size'   : 14}
 matplotlib.rc('font', **font)
 
 # Open an image from samples directory
@@ -17,6 +17,7 @@ fig = plt.figure()
 fig.add_subplot(121)
 plt.imshow(image)
 plt.title('Original image')
+plt.axis('off')
 
 # Use of the function segment() to get the desired shape
 segmented_image = segment(image, [0.3, 0.45, 0.2]) # hue_low = 0.3, hue_high = 0.45, transparency = 0.2
@@ -24,6 +25,7 @@ segmented_image = segment(image, [0.3, 0.45, 0.2]) # hue_low = 0.3, hue_high = 0
 fig.add_subplot(122)
 plt.imshow(segmented_image)
 plt.title('Segmented image')
+plt.axis('off')
 plt.show()
 
 # Use the function draw_contour() to draw the filled contour the segmented image
@@ -32,7 +34,7 @@ image_contour = draw_contour(segmented_image)
 fig.add_subplot(223)
 plt.imshow(image_contour)
 plt.title('Image contour (filled)')
-
+plt.axis('off')
 # Use the function draw_line() to calculate the centroid and draw a line from its center 
 image_contour = draw_line(image_contour, evaluated_degree)
 
@@ -44,6 +46,7 @@ image_contour, x, y = center_line_coordinates(image_contour)
 fig.add_subplot(224)
 plt.imshow(image_contour)
 plt.title('Image contour with the draw line')
+plt.axis('off')
 plt.show()
 
 # Use the function cart2polar() to convert cartesian coordinates to polar coordinates

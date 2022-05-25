@@ -143,10 +143,9 @@ def plot(image_contour, rho, theta):
     fig = plt.figure()
     fig.add_subplot(121)
     plt.imshow(image_contour)
-    plt.title('Segmented image')
+    plt.title('Image contour with the draw line')
+    plt.axis('off')
     ax = plt.subplot(1, 2, 2, projection='polar')
     plt.plot(theta, rho)
     plt.title('Polar representation')
-    plt.axis('off')
-
     plt.show()
