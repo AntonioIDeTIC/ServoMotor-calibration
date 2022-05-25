@@ -52,7 +52,7 @@ image_contour = draw_line(image_contour, evaluated_degree)
 
 
 <p align="center" width="100%">
-    <img src="images/Second.png"> 
+    <img width="55%" src="images/Second.png"> 
 </p>
 
 
