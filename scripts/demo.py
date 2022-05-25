@@ -6,7 +6,7 @@ import matplotlib
 
 # Select your font
 font = {'family' : 'Times New Roman',
-        'size'   : 14}
+        'size'   : 18}
 matplotlib.rc('font', **font)
 
 # Open an image from samples directory
