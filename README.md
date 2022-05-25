@@ -36,7 +36,7 @@ segmented_image = segment(image, [0.3, 0.45, 0.2])
 ```
 
 <p align="center" width="100%">
-    <img width="99.5%" src="images/First.svg"> 
+    <img width="99%" src="images/First.svg"> 
 </p>
 
 After the segmentation process, it is necessary to perform some contour detection using OpenCV. The code and figure below show the effect of applying two different functions, draw_contour() to detect the contour (filled) and draw_line() to calculate its centroid and draw a line in the middle. 
@@ -83,7 +83,7 @@ plot(image_contour, rho, theta)
 ```
 
 <p align="center" width="100%">
-    <img width="99.5%" src="images/Third.svg"> 
+    <img width="99%" src="images/Third.svg"> 
 </p>
 
 To average out the error it is necessary to have labelled the photos correctly. So that the webcam will take pictures synchronously with the Arduino one when controlling the servo motor. Thus, to calculate the error with this methodology it is only necessary to subtract the degree information provided by the image label with the average theta calculation.
