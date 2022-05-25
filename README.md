@@ -35,8 +35,9 @@ image = plt.imread('../samples/' + str(evaluated_degree) + '_degree.jpg')
 segmented_image = segment(image, [0.3, 0.45, 0.2]) 
 ```
 
-![alt text](/images/First.png/)
-
+<p align="center" width="100%">
+    <img src="images/First.png"> 
+</p>
 
 After the segmentation process, it is necessary to perform some contour detection using OpenCV. The code and figure below show the effect of applying two different functions, draw_contour() to detect the contour (filled) and draw_line() to calculate its centroid and draw a line in the middle. 
 
@@ -49,7 +50,12 @@ image_contour = draw_contour(segmented_image)
 image_contour = draw_line(image_contour, evaluated_degree)
 ```
 
-![alt text](/images/Second.png/)
+
+<p align="center" width="100%">
+    <img src="images/Second.png"> 
+</p>
+
+
 
 Finally, before converting the Cartesian coordinates of the line to polar coordinates, it is necessary to centre the X and Y coordinates. This is performed by using center_line_coordinates(). The output of these functions gives us the new X and Y coordinates. After that, we use cart2polar() to obtain rho and theta and plot() to represent de polar coordinates.  
 
@@ -76,7 +82,9 @@ else:
 plot(image_contour, rho, theta)
 ```
 
-![alt text](/images/Third.png/)
+<p align="center" width="100%">
+    <img src="images/Third.png"> 
+</p>
 
 To average out the error it is necessary to have labelled the photos correctly. So that the webcam will take pictures synchronously with the Arduino one when controlling the servo motor. Thus, to calculate the error with this methodology it is only necessary to subtract the degree information provided by the image label with the average theta calculation.
 
