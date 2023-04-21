@@ -2,10 +2,6 @@ from libServo import *
 
 
 class ServoProcess(Process):
-    INITIALIZE_OK = 0
-    INITIALIZE_NO_IR_CAM_DETECTED = 1
-    INITIALIZE_INIT_ERROR = 2
-
     def __init__(self):
         # Shared memory elements
         self.activate_rotation = Value('b', 0)
