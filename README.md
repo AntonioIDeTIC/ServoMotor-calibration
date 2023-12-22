@@ -24,7 +24,7 @@ Finally, we use Arduino Uno and a low-cost webcam to control and take photos of 
 ## 🚀 Code
 The functions developed in this work can be found in the utils.py file in the scripts folder. In the same way, simple use of these functions is presented in demo.py
 
-For example, the segment() function was necessary to separate the green 3d-printed piece from the background. The code and figure below show the results of applying a segmentation.
+For example, the segment() function was necessary to separate the green 3D-printed piece from the background. The code and figure below show the results of applying a segmentation.
 ```py
 from utils import segment
 
@@ -45,7 +45,7 @@ After the segmentation process, it is necessary to perform some contour detectio
 ```py
 from utils import draw_contour, draw_line
 
-# Use the function draw_contour() to draw the filled contour the segmented image
+# Use the function draw_contour() to draw the filled contour of the segmented image
 image_contour = draw_contour(segmented_image)
 # Use the function draw_line() to calculate the centroid and draw a line from its center 
 image_contour = draw_line(image_contour, evaluated_degree)
@@ -58,13 +58,13 @@ image_contour = draw_line(image_contour, evaluated_degree)
 
 
 
-Finally, before converting the Cartesian coordinates of the line to polar coordinates, it is necessary to centre the X and Y coordinates. This is performed by using center_line_coordinates(). The output of these functions gives us the new X and Y coordinates. After that, we use cart2polar() to obtain rho and theta and plot() to represent de polar coordinates.  
+Finally, before converting the Cartesian coordinates of the line to polar coordinates, it is necessary to center the X and Y coordinates. This is performed by using center_line_coordinates(). The output of these functions gives us the new X and Y coordinates. After that, we use cart2polar() to obtain rho and theta and plot() to represent de polar coordinates.  
 
 
 ```py
 from utils import center_line_coordinates, cart2polar, plot
 
-# Use the function center_line_coordinates() to center the original coordinates from the line to convert it in polar coordinates 
+# Use the function center_line_coordinates() to center the original coordinates from the line to convert them in polar coordinates 
 # 145 indicates the actual degree you are studying
 image_contour, x, y = center_line_coordinates(image_contour)
 
@@ -100,7 +100,7 @@ error = np.abs(mean_theta - evaluated_degree)
 This project is released under the MIT 2.0 license.
 
 ## 📧 Contact
-If you have any question, please email antoniogalvanhernandez1998@gmail.com.
+If you have any questions, please email antoniogalvanhernandez1998@gmail.com.
 
 
 [Arduino]: https://es.aliexpress.com/item/1005003363526075.html?spm=a2g0o.order_list.0.0.7026194d5T4FYp&gatewayAdapt=glo2esp
