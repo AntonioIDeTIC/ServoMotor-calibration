@@ -29,7 +29,7 @@ For example, the segment() function was necessary to separate the green 3D-print
 from utils import segment
 
 evaluated_degree = 145
-# Open an image from samples directory
+# Open an image from the samples directory
 image = plt.imread('../samples/' + str(evaluated_degree) + '_degree.jpg')
 # Use of the function segment() to get the desired shape
 # hue_low = 0.3, hue_high = 0.45, transparency = 0.2
